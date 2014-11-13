@@ -58,7 +58,7 @@
 {
     NSString *member_id = [[NSUserDefaults standardUserDefaults]objectForKey:@"member_id"];
     NSString *postString = [NSString stringWithFormat:@"member_session_id=%@&type=0&num=20",member_id];
-    NSString *string = @"wo zai ce shi ..";
+    NSString *string = @"wo zai ce shi.";
     NSData *postData = [postString dataUsingEncoding:4];
     //获取用户自己的评论列表
     NSDictionary *memberInfo = [NetWorking send:COMMENT_LIST_MEMBER postBody:postData];
