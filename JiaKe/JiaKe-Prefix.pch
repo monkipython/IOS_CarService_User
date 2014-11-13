@@ -13,4 +13,11 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "URL.h"
+    #import "BMapKit.h"
+    #import "API.h"
+    #import "NetWorking.h"
+    #import "FMDB.h"
+    #import "EGOImageView.h"
+
 #endif

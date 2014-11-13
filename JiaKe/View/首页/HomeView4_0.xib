@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="beautyBtn" destination="G1r-Dj-MAI" id="gYC-EM-8dg"/>
+                <outlet property="businessBtn" destination="0aM-0y-9EZ" id="amX-y5-0Mg"/>
+                <outlet property="decoretBtn" destination="YZH-Dy-Ab7" id="SRc-61-9it"/>
+                <outlet property="eventBtn" destination="xao-9y-luP" id="JNp-5b-hOo"/>
+                <outlet property="necessaryBtn" destination="zB8-Gh-dVj" id="ZlF-mW-uRq"/>
+                <outlet property="refitBtn" destination="Y54-5J-PRd" id="G2j-Zi-j7h"/>
+                <outlet property="repairBtn" destination="QNv-Xd-CEh" id="M3D-1R-HO6"/>
+                <outlet property="searchDisplayController" destination="eEi-PP-2ZP" id="f2c-Z0-ZBW"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Tqx-K1-601"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="G1r-Dj-MAI">
+                    <rect key="frame" x="20" y="122" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="美容" image="meiRong_03.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BDRRAction:" destination="-1" eventType="touchUpInside" id="Xdb-nJ-UdY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YZH-Dy-Ab7">
+                    <rect key="frame" x="94" y="122" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="装饰" image="zhuangXie_03.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BDRRAction:" destination="-1" eventType="touchUpInside" id="Cq5-k6-oae"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QNv-Xd-CEh">
+                    <rect key="frame" x="168" y="122" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="维修" image="weiXie_03.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BDRRAction:" destination="-1" eventType="touchUpInside" id="iY5-WE-nSA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y54-5J-PRd">
+                    <rect key="frame" x="242" y="122" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="改装" image="gaiZhuang_03.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BDRRAction:" destination="-1" eventType="touchUpInside" id="awe-zw-8KP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美容" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N8f-nl-LvW">
+                    <rect key="frame" x="33" y="183" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装饰" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ieM-9G-Koi">
+                    <rect key="frame" x="107" y="183" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="维修" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q4Q-pr-jka">
+                    <rect key="frame" x="181" y="183" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="改装" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yat-Vi-Lcx">
+                    <rect key="frame" x="255" y="183" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zB8-Gh-dVj">
+                    <rect key="frame" x="0.0" y="378" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="驾客（首页_02.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="necessaryAction:" destination="-1" eventType="touchUpInside" id="eUm-Mr-AiG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xao-9y-luP">
+                    <rect key="frame" x="0.0" y="425" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="驾客（首页_05.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="eventAction:" destination="-1" eventType="touchUpInside" id="eZ1-tl-jVX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0aM-0y-9EZ">
+                    <rect key="frame" x="0.0" y="472" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="驾客（首页_07.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nearbyAction:" destination="-1" eventType="touchUpInside" id="hi9-sZ-Fyr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="30" y="125"/>
+        </view>
+        <searchDisplayController id="nN0-hl-Tai">
+            <connections>
+                <outlet property="delegate" destination="-1" id="WEb-vC-BmD"/>
+                <outlet property="searchContentsController" destination="-1" id="9tb-Nk-z53"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="06f-kX-3hU"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="7V3-g5-IC4"/>
+            </connections>
+        </searchDisplayController>
+        <searchDisplayController id="eEi-PP-2ZP">
+            <connections>
+                <outlet property="delegate" destination="-1" id="jEO-AU-zLw"/>
+                <outlet property="searchContentsController" destination="-1" id="ozV-qq-vsc"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="TjR-N2-f5s"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="co2-rb-kNx"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="gaiZhuang_03.png" width="180" height="180"/>
+        <image name="meiRong_03.png" width="180" height="180"/>
+        <image name="weiXie_03.png" width="180" height="180"/>
+        <image name="zhuangXie_03.png" width="180" height="180"/>
+        <image name="驾客（首页_02.png" width="640" height="97"/>
+        <image name="驾客（首页_05.png" width="639" height="97"/>
+        <image name="驾客（首页_07.png" width="639" height="97"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

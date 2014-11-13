@@ -7,18 +7,66 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "LoginViewController.h"
+#import "RootViewController.h"
+#import "NetStatus.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    //[application setStatusBarHidden:NO];
+    //设置状态栏文字颜色
+    [application setStatusBarStyle:1];
+    [[NetStatus alloc]getNetStatus];
+    //初始化地图
+    self.mapManager = [[BMKMapManager alloc]init];
+    //开启地图功能
+    BOOL ret = [self.mapManager start:@"idKsDNVBkdSjRPosNdRCCLyq" generalDelegate:nil];
+    if(ret)
+    {
+        NSLog(@"开启地图");
+    }
+    
+//    UIRemoteNotificationType enble = [[UIApplication rsharedApplication]enabledRemoteNotificationTypes];
+//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+//        UIUserNotificationType myTypes = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound;
+//        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:myTypes categories:nil];
+//        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+//    }else
+//    {
+//        
+//    }
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    NSArray *arr = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    NSString *str = [arr objectAtIndex:0];
+    NSLog(@"%@",str);
+    UINavigationController *nav = [RootViewController rootViewController];
+    self.window.rootViewController = nav;
     return YES;
 }
 
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    NSLog(@"%@",userInfo);
+}
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    NSLog(@"My token is: %@", deviceToken);
+}
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
+{
+    //register to receive notifications
+    [application registerForRemoteNotifications];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    NSLog(@"%@",error);
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

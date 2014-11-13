@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>platformId</key>
+	<string>20023</string>
+	<key>appNo</key>
+	<string>33</string>
+	<key>developerId</key>
+	<string>33</string>
+	<key>developerKey</key>
+	<string>9b84181e26c0bb7dc77b43cd2bfe87eb</string>
+	<key>cloudUrl</key>
+	<string>http://api.hcicloud.com:8888</string>
+	<key>initCapKeys</key>
+	<string>tts.local.xiaokun.navigation.n6</string>
+	<key>capKey</key>
+	<string>tts.local.xiaokun.navigation.n6</string>
+	<key>pitch</key>
+	<string>5</string>
+	<key>volume</key>
+	<string>9</string>
+	<key>speed</key>
+	<string>6</string>
+	<key>puncMode</key>
+	<string>off</string>
+	<key>digitMode</key>
+	<string>auto_number</string>
+	<key>voiceStyle</key>
+	<string>clear</string>
+	<key>audioFormat</key>
+	<string>pcm16k16bit</string>
+	<key>logFileSize</key>
+	<string>102400</string>
+	<key>logLevel</key>
+	<string>3</string>
+	<key>logFileCount</key>
+	<string>5</string>
+	<key>autoCloudAuth</key>
+	<string>no</string>
+	<key>speedup</key>
+	<string>3</string>
+	<key>priority</key>
+	<string>30</string>
+</dict>
+</plist>
