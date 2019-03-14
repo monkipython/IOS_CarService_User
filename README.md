@@ -3,3 +3,5 @@ Car Service app user edition with social network, xmpp instant chat(voice, text,
 <br/>
 - Make sure Xmpp framework, Jpush SDK, and some other framework/SDK are imported to you project!
 - Profile should be change before executing or compiling.
+
+# NOTE: All the source code are for demonstration only. Please use it at your own risk. Thanks.
